@@ -1,2 +1,2 @@
 # ProjektJavaFX
-Projekt za kolegij Programiranje u Javi
+Projekt za kolegij Programiranje u Javi.
