@@ -1,0 +1,1 @@
+com.example.projekt_1.model.Student@3cc296e7

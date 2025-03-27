@@ -1,0 +1,17 @@
+package com.example.projekt_1.database;
+
+public class QueryStrings {
+
+    public static final String INSERT_SCIENTIFIC_WORK = "INSERT INTO ZNANSTVENI_RADOVI VALUES(NEXTVAL('ZR_SEQUENCE'), ?, ?, ?, ?, ?, ?, ?)";
+    public static final String UPDATE_SCIENTIFIC_WORK = "UPDATE ZNANSTVENI_RADOVI SET NASLOV = ?, DETALJI = ?, KATEGORIJE = ?, MENTOR = ?, DATUM_OBRANE = ?, DATOTEKA = ?, ID_KORISNIKA = ? WHERE ID = ?";
+    public static final String DELETE_SCIENTIFIC_WORK = "DELETE FROM ZNANSTVENI_RADOVI WHERE ID = ?";
+    public static final String GET_SCIENTIFIC_WORK_WITH_ID = "SELECT * FROM ZNANSTVENI_RADOVI WHERE ID = ?";
+
+    public static final String INSERT_CONFERENCE = "INSERT INTO KONFERENCIJE VALUES(NEXTVAL('ZR_SEQUENCE'), ?, ?, ?, ?, ?, ?)";
+    public static final String UPDATE_CONFERENCE = "UPDATE KONFERENCIJE SET NASLOV = ?, DETALJI = ?, PREDMET = ?, PROFESOR = ?, DATUM_KONFERENCIJE = ?, ID_PROFESORA = ? WHERE ID_KONFERENCIJE = ?";
+    public static final String DELETE_CONFERENCE = "DELETE FROM KONFERENCIJE WHERE ID_KONFERENCIJE = ?";
+    public static final String GET_CONFERENCE_WITH_ID = "SELECT * FROM KONFERENCIJE WHERE ID_KONFERENCIJE = ?";
+
+    public static final String INSERT_APPLICANTS = "INSERT INTO KONF_STUDENTI VALUES(?, ?, ?)";
+
+}

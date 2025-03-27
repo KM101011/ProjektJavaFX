@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projekt_1.controlleri.MenuController" hgap="10.0" vgap="10.0" >
+    <columnConstraints>
+        <ColumnConstraints percentWidth="100.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="NEVER"/>
+        <RowConstraints vgrow="NEVER"/>
+    </rowConstraints>
+
+    <MenuBar fx:id="student" prefHeight="28.0" prefWidth="600.0" GridPane.rowIndex="0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Moji radovi">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showMyWorksInput" text="Unos" />
+                    <MenuItem mnemonicParsing="false" onAction="#showMyWorksReview" text="Pregled" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Svi radovi">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showAllWorksReview" text="Pregled" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Prijava konferencija">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showApplyToConference" text="Pregled" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="LOGOUT">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handlelogout" text="Pozdrav!" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+
+    <MenuBar fx:id="profesor" prefHeight="28.0" prefWidth="600.0" GridPane.rowIndex="0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Moje konferencije">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showMyConferencesInput" text="Unos" />
+                    <MenuItem mnemonicParsing="false" onAction="#showMyConferencesReview" text="Pregled" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Sve konferencije">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showAllConferencesReview" text="Pregled" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Promjene">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showChanges" text="Pregled promjena" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="LOGOUT">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handlelogout" text="Pozdrav!" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+</GridPane>

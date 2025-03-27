@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+
+<?import javafx.scene.layout.GridPane?>
+<GridPane prefHeight="500.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projekt_1.controlleri.ListOfStudentsController">
+      <TableView fx:id="tableViewForStudents" prefHeight="500.0" prefWidth="250.0">
+        <columns>
+          <TableColumn fx:id="studentNames" prefWidth="249.0" text="Lista studenata prijavljena na konferenciju" />
+        </columns>
+      </TableView>
+</GridPane>
